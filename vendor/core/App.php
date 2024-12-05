@@ -10,6 +10,8 @@ class App
 
     public function __construct()
     {
+        new ErrorHandler();
+
         // Получаем экземпляр контейнера
         self::$app = Registry::getInstance();
         $this->getParams();

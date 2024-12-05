@@ -7,3 +7,5 @@ if(PHP_MAJOR_VERSION < 8){
 require_once dirname(__DIR__) . "/Config/init.php";
 
 new \core\App();
+
+throw new Exception("Error");
